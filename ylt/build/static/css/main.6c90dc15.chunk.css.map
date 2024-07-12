@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,EACE,qBAAsB,CACtB,QAAU,CACV,SAAW,CACX,qCACF,CAEA,QACE,gCACF","file":"main.6c90dc15.chunk.css","sourcesContent":["* {\r\n  box-sizing: border-box;\r\n  margin: 0%;\r\n  padding: 0%;\r\n  font-family: \"IBM Plex Mono\", monospace;\r\n}\r\n\r\n.active {\r\n  border-bottom: 13px solid #01bf71;\r\n}\r\n"]}

@@ -1,0 +1,127 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 5));
+  }
+}
+
+@keyframes scrollMobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 5));
+  }
+}
+.slider-support {
+  background: white;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.slider-support::before,
+.slider-support::after {
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.slider-support::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider-support::before {
+  left: 0;
+  top: 0;
+}
+.slider-support .slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(400px * 7);
+}
+
+.slider-support .slide-track:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+.slider-support .slide {
+  height: 600px;
+  width: 400px;
+}
+
+/* Right Slider */
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(calc(-300px * 5));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slider_right {
+  background: white;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider_right::before,
+.slider_right::after {
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.slider_right::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(-180deg);
+}
+.slider_right::before {
+  left: 0;
+  top: 0;
+}
+.slider_right .slide-track {
+  animation: scrollRight 20s linear infinite;
+  display: flex;
+  width: calc(-400px * 7);
+}
+.slider_right .slide-track:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+.slider_right .slide {
+  height: 300px;
+  width: 400px;
+}
+
+@media (max-width: 450px) {
+  .slider-support .slide-track {
+    animation: scrollMobile 20s linear infinite;
+    display: flex;
+    width: calc(200px * 7);
+  }
+}

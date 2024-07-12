@@ -1,0 +1,51 @@
+.relParent {
+  position: relative;
+  max-width: "100%";
+  min-height: 100vh;
+}
+
+.stb20 {
+  position: sticky;
+  padding-bottom: 20rem;
+}
+
+.relz40 {
+  position: relative;
+  z-index: 40;
+}
+.absh13w10 {
+  position: absolute;
+  height: 20rem;
+  width: 14rem;
+}
+.relz30 {
+  position: relative;
+  z-index: 30;
+}
+.absh13w11 {
+  position: absolute;
+  height: 13rem;
+  width: 11rem;
+}
+.relz30h30w20 {
+  position: relative;
+  z-index: 30;
+  height: 1rem;
+  width: 20rem;
+}
+.absh11w8 {
+  position: absolute;
+  height: 11rem;
+  width: 8rem;
+}
+.plattr {
+  position: absolute;
+  right: 0;
+}
+
+.relz30h3w2 {
+  position: relative;
+  z-index: 30;
+  height: 3rem;
+  width: 2rem;
+}
